@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:300,600|Fira+Sans:300,600&display=swap&subset=latin-ext');
+
+.reveal .slides {
+    text-align: left;
+}
+
+html {
+    font-family: "Fira Sans";
+    font-size: 32px;
+}
+
+pre, code {
+    font-family: "Fira Code";
+    font-size: 95%;
+    padding: 0;
+}
+
+pre {
+    margin-top: 2ex;
+}
+
+pre.highlight {
+    padding: 0.5ex;
+    margin: 1.5ex -0.5ex 0 -0.5ex;
+    background-color: #f8f8f8;
+    border-radius: 0.5ex;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
+}
+
+p {
+    margin: 1em 0;
+}
+
+h2, h3 {
+    margin: 1em 0;
+}
+
+h1 {
+    font-weight: medium;
+    font-size: 150%;
+    margin: -0.25ex;
+    padding: 0.25ex;
+    background-color: teal;
+    color: white;
+    border-radius: 0.5ex;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+    margin-top: 0.5 * $unit;
+}
+
+em {
+    font-style: normal;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 25%, yellow);
+}
+
+strong {
+    font-weight: bold;
+}

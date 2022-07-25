@@ -1,0 +1,10 @@
+
+markdown: kramdown
+
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+
+include:
+  - node_modules

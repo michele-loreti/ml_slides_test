@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.reveal.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ 'node_modules/reveal.js/dist/reset.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'node_modules/reveal.js/dist/reveal.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/vs.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-markdown
+                 data-separator="^<hr />"
+                 data-charset="utf-8">
+          <script type="text/template">{{ content }}</script>
+        </section>
+      </div>
+    </div>
+    <script src="{{ 'node_modules/reveal.js/dist/reveal.js' | relative_url }}"></script>
+    <script src="{{ 'node_modules/reveal.js/plugin/markdown/markdown.js' | relative_url }}"></script>
+    <script src="{{ 'node_modules/reveal.js/plugin/math/math.js' | relative_url }}"></script>
+    <script>
+      Reveal.initialize({
+	  width: 960,
+	  height: 640,
+	  controls: false,
+	  progress: false,
+	  keyboard: true,
+	  center: false,
+	  overview: true,
+	  touch: true,
+	  hash: true,
+	  history: false,
+	  transition: 'none',
+	  slideNumber: 'c/t',
+	  showSlideNumber: 'all',
+	  pdfMaxPagesPerSlide: 1,
+	  plugins: [
+	      RevealMarkdown,
+	      RevealMath.MathJax2
+	  ]
+      });
+    </script>
+  </body>
+</html>
